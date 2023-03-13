@@ -1,10 +1,9 @@
-import random
-
-numbers = '1234567890'
-symbols = '~!@#$%^&*()_+=-`><?/\|][}{,.'
-letters = 'qwertyuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM'
-
 def password_generator(letters_count):
+  import random
+  numbers = '1234567890'
+  symbols = '~!@#$%^&*()_+=-`><?/\|][}{,.'
+  letters = 'qwertyuiopasdfghjklmnbvcxzQWERTYUIOPLKJHGFDSAZXCVBNM'
+  
   password = ''
   for i in range(letters_count // 3):
     password += random.choice(numbers)
