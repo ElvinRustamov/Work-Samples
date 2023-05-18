@@ -13,3 +13,20 @@ This dataset can be used to build machine learning models to predict diabetes in
 This can be useful for healthcare professionals in identifying patients who may be at risk of developing diabetes and in developing personalized treatment plans. 
 Additionally, the dataset can be used by researchers to explore the relationships between various medical and demographic factors and 
 the likelihood of developing diabetes.
+
+*What I did*
+- Cleansing data
+- Manipulating data
+- Visualizing data
+- Making a model
+
+### Making model
+
+In this stage I chose logistic regression to make a model. Because my dependent variable is categorical (Consist of 0 and 1).
+
+### About Logistic Regression
+
+Logistic regression estimates the probability of an event occurring, such as diabetes or not diabetes, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1.
+
+### Model Optimization
+When I optimize the model I changed the algorithm from *lbfgs* to *liblinear*.
