@@ -29,4 +29,7 @@ In this stage I chose logistic regression to make a model. Because my dependent 
 Logistic regression estimates the probability of an event occurring, such as diabetes or not diabetes, based on a given dataset of independent variables. Since the outcome is a probability, the dependent variable is bounded between 0 and 1.
 
 ### Model Optimization
-When I optimize the model I changed the algorithm from *lbfgs* to *liblinear*.
+
+The dataset consists of 100 000 rows and I split the dataset into three part (train, test and validation set). In general I can say that this dataset is small. For small datasets, ‘liblinear’ is a good choice. When I optimize the model I changed the algorithm from *lbfgs* to *liblinear*.
+
+My purpose in dividing the data into three sets is that when I optimize the model, there is a possibility that the model will memorize the data in the test set and also it is possible that a margin of error in the results I will obtain. After I have optimized and finished the model, I can use the validation set to calculate the accuracy rate with more precision. 
